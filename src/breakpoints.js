@@ -41,7 +41,10 @@ function Breakpoints(props) {
       <Typography variant="subtitle1">Current width: {width}</Typography>
       <div className={classes.container}>
         <Hidden xsDown>
-          <Paper className={classes.paper}><h1>left nav</h1></Paper>
+          <Paper className={classes.paper}>
+            <h1>left nav</h1>
+            {props.children}
+          </Paper>
           <Paper className={classes.paper}>
             <img width="200px" src="https://bdelacretaz.files.wordpress.com/2019/10/170925_adaptto_4065-bertrand-delacretaz-cropped.jpg?w=490&h=600" />
             <div>
@@ -52,7 +55,7 @@ function Breakpoints(props) {
         <Hidden smUp>
           <Paper className={classes.paper}>
               <h1>Single column</h1>
-              <div>with some text</div>
+              {props.children}
           </Paper>
         </Hidden>
       </div>
