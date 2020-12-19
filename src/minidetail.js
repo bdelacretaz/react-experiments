@@ -2,8 +2,14 @@ import React from 'react';
 
 class MiniDetail extends React.Component {
     render() {
-        return <div class="debugBorder">
-            <h3>MiniDetail for #{this.props.index}</h3></div>  
+        const item = this.props.selected < 0 ? null : this.props.content[this.props.selected];
+        if(item) {
+            return <div class="debugBorder">
+                <h3>MiniDetail: {item.name}</h3>
+            </div>
+        } else {
+            return null;
+        }
     }
 }
 
