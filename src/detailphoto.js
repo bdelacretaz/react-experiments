@@ -6,12 +6,11 @@ class DetailPhoto extends React.Component {
     }
 
     render() {
-        return <div class="debugBorder" style={{backgroundColor: 'yellow',}}>
-            <h1>DetailPhoto</h1>
-            <pre>
-                {JSON.stringify(this.props,2)}
-            </pre>
-        </div>  
+        if(this.props.selected < 0) {
+            return <div className="detailphoto"><h1>No DetailPhoto selection</h1></div>
+        } else {
+            return <div className="emptydetailphoto"><h1>DetailPhoto #{this.props.selected}</h1></div>
+        }
     }
 }
 

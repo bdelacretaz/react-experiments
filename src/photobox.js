@@ -7,13 +7,17 @@ class PhotoBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected : 0
+      selected : -1
     }
     this.handleSelect = this.handleSelect.bind(this);
   }
 
   handleSelect(index) {
-    this.setState({selected: index});
+    if(this.state.selected == index) {
+      this.setState({selected: -1});
+    } else {
+      this.setState({selected: index});
+    }
   }
 
   render() {
