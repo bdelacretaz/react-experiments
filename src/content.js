@@ -74,21 +74,74 @@ for(var i=1 ; i <= 8; i++) {
         nom: `da Vinci #${i}`,
         habite: "Milano",
         depuis: "fort longtemps",
-        phrase: `Leo for president!...#${i}`
+        phrase: `Leo for president!...#${i}`,
+        interview: {
+            qr: [
+                {
+                    q: "On peut se tutoyer?",
+                    r: "Bien sûr!",
+                },
+                {
+                    q: "Une invention préférée?",
+                    r: "Le trombone volant, c'est un succès mondial!",
+                },
+                {
+                    q: "Des projets?",
+                    r: "Je pense inventer encore quelques trucs, pour sûr!",
+                },
+            ]
+        }
     });
     content.personnes.push({
         prenom: "Gaston",
         nom: `Lagaffe #${i}`,
         habite: "Dupuis City",
         depuis: "quelques années",
-        phrase: `Gaston comme président!...#${i}`
+        phrase: `Gaston comme président!...#${i}`,
+        interview: {
+            qr: [
+                {
+                    q: "On peut se tutoyer?",
+                    r: "Bien sûr!",
+                },
+                {
+                    q: "Un avis sur de Mesmeaker?",
+                    r: "M'enfin?",
+                },
+                {
+                    q: "Des projets?",
+                    r: "Je prépare une symphonie pour gaffophones électroniques. On se réjouit comme des fous!",
+                },
+            ]
+        }
     });
     content.personnes.push({
         prenom: "Marie",
         nom: `Curie #${i}`,
         habite: "Varsovie",
         depuis: "avant, tout avant",
-        phrase: `Marie est très active en radio...#${i}`
+        phrase: `Marie est très active en radio...#${i}`,
+        interview: {
+            qr: [
+                {
+                    q: "On peut se tutoyer?",
+                    r: "Bien sûr!",
+                },
+                {
+                    q: "Pierre va bien?",
+                    r: "Euh, enfin, je dirais 'pas pire'.",
+                },
+                {
+                    q: "Des projets?",
+                    r: "Je prépare une radio libre très active pour la rentrée!",
+                },
+                {
+                    q: "Un avis sur le climat?",
+                    r: "Il fait bien chaud, là, c'est vrai.",
+                },
+            ]
+        }
+
     });
 }
 
