@@ -4,6 +4,10 @@ import content from './content.js';
 import Typography from '@material-ui/core/Typography';
 
 class App extends React.Component {
+    componentDidMount() {
+        document.title = content.site.title;
+    }
+
     render() {
         return <div class="app">
             <Typography>
@@ -11,7 +15,7 @@ class App extends React.Component {
                     <h1>{content.site.title}</h1>
                     <div class="tagline">{content.site.tagline}</div>
                 </div>
-                <PhotoBox data={content.personnes}/>
+                <PhotoBox siteContent={content.site} data={content.personnes}/>
             </Typography>
         </div>
     }

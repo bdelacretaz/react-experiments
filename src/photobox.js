@@ -22,6 +22,14 @@ class PhotoBox extends React.Component {
   }
 
   render() {
+    var title = this.props.siteContent.title;
+    if(this.state.selected >= 0) {
+      const personne = this.props.data[this.state.selected];
+      title += ` - ${personne.prenom} ${personne.nom}`;
+    }
+
+    document.title = title;
+
     return (
       <div>
         <Grid container spacing={3}>

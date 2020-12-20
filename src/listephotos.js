@@ -25,7 +25,7 @@ class ListePhotos extends React.Component {
 
     render() {
         return <div className="listephotos">
-            <Grid container spacing={3}>
+            <Grid className={"grid"} container spacing={3}>
             {
                 this.props.content.map(it => 
                     <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
