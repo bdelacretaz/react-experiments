@@ -13,7 +13,7 @@ function Item(props) {
         onClick={() => props.selectCallback(props.index)}
         className={cssClass}
         >
-        <img src={personne.squarePhotoURL}/>
+        <img src={personne.squarePhotoURL} alt={personne.fullName}/>
         <div class="name">{text}</div>
         <Hidden smUp>
             {isSelected ? miniDetail : null}

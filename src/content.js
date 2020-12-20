@@ -1,7 +1,7 @@
 const content = {
     site: {
         title: "Testing 1,2,3",
-        tagline: "Cliquez sur une photo pour voir les détails",
+        tagline: "Cliquez sur une photo pour voir les détails. L'aspect graphique est provisoire..",
     },
     interviews: {
         journalistes: [
@@ -55,7 +55,7 @@ const content = {
                     },
                     {
                         q: "Un plat préféré?",
-                        r: "La soupe à la bière à Roger, bien connue des habitants de Cheyres!",
+                        r: "La soupe à la bière, en hiver!",
                     },
                     {
                         q: "Un livre préféré?",
@@ -98,11 +98,12 @@ function cleanupKey(key) {
     return key.split('#')[0].trim().replace('é','e').replace(' ', '-');
 }
 
-// compute person keys and URLs for pictures etc
+// compute person keys, full names and URLs for pictures etc
 content.personnes.map(p => {
     p.key = cleanupKey(`${p.prenom}-${p.nom}`.toLowerCase());
     p.photoURL = `./images/personnes/${p.key}.jpg`;
     p.squarePhotoURL = `./images/personnes/${p.key}-square.jpg`;
+    p.fullName = `${p.prenom} ${p.nom}}`
     return null;
 })
 
@@ -131,6 +132,7 @@ content.personnes.map(p => {
 var index=0;
 content.personnes.map(p => {
     p.index = index++;
+    return null;
 })
 
 module.exports = content

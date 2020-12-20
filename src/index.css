@@ -13,6 +13,8 @@
 
 .listephotos {
     background-color: black;
+    height: 90vh;
+    overflow-y: scroll;
 }
 
 .listeitem {

@@ -8,7 +8,7 @@ class MiniDetail extends React.Component {
         if(item) {
             return <div className="minidetail">
                 <Paper>
-                    <p classe="habite">Habite a {item.habite} depuis {item.depuis}.</p>
+                    <p classe="habite">{item.prenom } habite a {item.habite} depuis {item.depuis}.</p>
                     <p class="phrase">{item.phrase}</p>
                     <Interview personne={item}/>
                 </Paper>
