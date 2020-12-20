@@ -1,15 +1,46 @@
-.listephotos {
-    background-color: rgb(238, 238, 255);
+.app .header {
+    border-bottom: solid gray 1px;
+    margin-bottom: 0.5em;
 }
 
-.detailphoto {
-    background-color: rgb(255, 255, 205);
+.app .header .tagline {
+    font-style: italic;
 }
 
-.emptydetailphoto {
-    background-color: rgb(247, 212, 159);
+.listeitem img {
+    width:100%;
 }
 
-.selected {
+.listeitem .nom {
+    font-size: 120%;
+    text-align: center;
+}
+
+.listeitem .selected {
     font-weight: bold;
+}
+
+.interview .question {
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+.interview .reponse {
+    font-style: italic;
+    margin-top: 0.1em;
+}
+
+.detailphoto img {
+    float:right;
+    width: 50%;
+    height: auto;
+}
+
+.detailphoto .phrase, 
+.minidetail .phrase {
+    font-style: italic;
+}
+
+.minidetail h2 {
+    font-size:120%;
 }

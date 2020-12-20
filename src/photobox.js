@@ -4,14 +4,6 @@ import ListePhotos from './listephotos.js';
 import DetailPhoto from './detailphoto.js';
 import Hidden from '@material-ui/core/Hidden';
 
-const content = [];
-for(var i=1; i <= 27; i++ ) {
-    content.push({
-        index: i,
-        name: `I am ze #${i}`,
-    })
-}
-
 class PhotoBox extends React.Component {
   constructor(props) {
     super(props);
@@ -37,7 +29,7 @@ class PhotoBox extends React.Component {
                 <ListePhotos
                   selectCallback={this.handleSelect}
                   selected={this.state.selected}
-                  content={content}
+                  content={this.props.data}
                 />
             </Grid>
             <Hidden xsDown>
@@ -45,7 +37,7 @@ class PhotoBox extends React.Component {
                   <DetailPhoto
                     selectCallback={this.handleSelect}
                     selected={this.state.selected}
-                    content={content}
+                    content={this.props.data}
                     />
               </Grid>
             </Hidden>

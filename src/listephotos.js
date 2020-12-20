@@ -4,14 +4,16 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 
 function Item(props) {
-    const text = `Photo [${props.index}]`;
+    const personne = props.content[props.index];
+    const text = <h2 class="nom">{personne.prenom} {personne.nom}</h2>;
     const isSelected = props.index === props.selected;
     const miniDetail = isSelected ? <MiniDetail selected={props.selected} content={props.content}/> : null;
-    const cssClass = isSelected ? "selected" : ""
+    const cssClass = isSelected ? "listeitem selected" : "listeitem"
     return <div
         onClick={() => props.selectCallback(props.index)}
         className={cssClass}
         >
+        <img src={personne.photoURL}/>
         {text}
         <Hidden smUp>
             {isSelected ? miniDetail : null}
