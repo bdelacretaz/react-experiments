@@ -53,6 +53,11 @@
     margin-top: 0.1em;
 }
 
+.detailphoto {
+    height:90vh;
+    overflow: scroll;
+}
+
 .detailphoto img {
     float:right;
     width: 50%;
