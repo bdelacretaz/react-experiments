@@ -98,10 +98,11 @@ function cleanupKey(key) {
     return key.split('#')[0].trim().replace('é','e').replace(' ', '-');
 }
 
-// compute person keys, for pictures etc
+// compute person keys and URLs for pictures etc
 content.personnes.map(p => {
     p.key = cleanupKey(`${p.prenom}-${p.nom}`.toLowerCase());
     p.photoURL = `./images/personnes/${p.key}.jpg`;
+    p.squarePhotoURL = `./images/personnes/${p.key}-square.jpg`;
     return null;
 })
 

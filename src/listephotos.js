@@ -13,8 +13,8 @@ function Item(props) {
         onClick={() => props.selectCallback(props.index)}
         className={cssClass}
         >
-        <img src={personne.photoURL}/>
-        {text}
+        <img src={personne.squarePhotoURL}/>
+        <div class="name">{text}</div>
         <Hidden smUp>
             {isSelected ? miniDetail : null}
         </Hidden>
@@ -28,7 +28,7 @@ class ListePhotos extends React.Component {
             <Grid className={"grid"} container spacing={3}>
             {
                 this.props.content.map(it => 
-                    <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
+                    <Grid item xs={12} sm={12} md={6} lg={6} xl={4}>
                         <Item 
                             selectCallback={this.props.selectCallback} 
                             index={it.index}

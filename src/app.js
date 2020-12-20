@@ -12,8 +12,7 @@ class App extends React.Component {
         return <div class="app">
             <Typography>
                 <div class="header">
-                    <h1>{content.site.title}</h1>
-                    <div class="tagline">{content.site.tagline}</div>
+                    <span class="title">{content.site.title}</span> - <span class="tagline">{content.site.tagline}</span>
                 </div>
                 <PhotoBox siteContent={content.site} data={content.personnes}/>
             </Typography>

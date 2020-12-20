@@ -1,6 +1,10 @@
+.app .title {
+    font-weight: bold;
+}
+
 .app .header {
-    border-bottom: solid gray 1px;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: solid rgb(215, 215, 215) 1px;
 }
 
 .app .header .tagline {
@@ -8,11 +12,24 @@
 }
 
 .listephotos {
-    overflow-y: 'scroll',
+    background-color: black;
+}
+
+.listeitem {
+    background-color: rgb(79, 78, 78);
+}
+
+.listeitem .name {
+    color:white;
+    padding:0;
+    margin:0;
+    font-size:80%;
 }
 
 .listeitem img {
     width:100%;
+    margin:0;
+    padding:0;
 }
 
 .listeitem .nom {
