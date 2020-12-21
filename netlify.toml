@@ -1,6 +1,13 @@
-# netlify HTTP headers config
-# https://docs.netlify.com/routing/headers/#syntax-for-the-headers-file
+[build]
+  command = "npm run build"
+  publish = "build/"
 
-# keep images for an hour
-/images/personnes/*
-  cache-control: public, max-age=3600, must-revalidate
+# https://docs.netlify.com/routing/headers/#syntax-for-the-headers-file
+[[headers]]
+  for = "/images/personnes/*"
+
+  [headers.values]
+    cache-control = '''
+      public,
+      max-age=3600,
+      must-revalidate'''
