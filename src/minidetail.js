@@ -1,17 +1,14 @@
 import React from 'react';
 import Interview from './interview.js';
-import Paper from '@material-ui/core/Paper';
 
 class MiniDetail extends React.Component {
     render() {
-        const item = this.props.selected < 0 ? null : this.props.content[this.props.selected];
-        if(item) {
+        if(this.props.index === this.props.selected) {
+            const personne = this.props.content[this.props.selected];
             return <div className="minidetail">
-                <Paper>
-                    <p classe="habite">{item.prenom } habite a {item.habite} depuis {item.depuis}.</p>
-                    <p class="phrase">{item.phrase}</p>
-                    <Interview personne={item}/>
-                </Paper>
+                <p classe="habite">{personne.prenom } habite a {personne.habite} depuis {personne.depuis}.</p>
+                <p class="phrase">{personne.phrase}</p>
+                <Interview personne={personne}/>
             </div>
         } else {
             return null;

@@ -156,7 +156,7 @@ content.personnes.map(p => {
     p.key = cleanupKey(`${p.prenom}-${p.nom}`.toLowerCase());
     p.photoURL = `./images/personnes/${p.key}.jpg`;
     p.squarePhotoURL = `./images/personnes/${p.key}-square.jpg`;
-    p.fullName = `${p.prenom} ${p.nom}}`
+    p.fullName = `${p.prenom} ${p.nom}`
     return null;
 })
 

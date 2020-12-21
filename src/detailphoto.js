@@ -17,6 +17,7 @@ class DetailPhoto extends React.Component {
                         <Interview personne={item}/>
                     </Paper>
                 </Typography>
+                <div class="spacer"/>
             </div>
         } else {
             return <div className="emptydetailphoto"><h1>-</h1></div>
