@@ -1,6 +1,6 @@
 # netlify HTTP headers config
 # https://docs.netlify.com/routing/headers/#syntax-for-the-headers-file
 
+# keep images for an hour
 /images/personnes/*
-  # valid for an hour
-  cache-control: max-age=3600
+  cache-control: public, max-age=3600, must-revalidate
