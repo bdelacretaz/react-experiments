@@ -1,0 +1,6 @@
+# netlify HTTP headers config
+# https://docs.netlify.com/routing/headers/#syntax-for-the-headers-file
+
+/images/personnes/*
+  # valid for an hour
+  cache-control: max-age=3600
