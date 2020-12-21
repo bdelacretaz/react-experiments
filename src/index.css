@@ -72,3 +72,7 @@
 .minidetail h2 {
     font-size:120%;
 }
+
+.prefetch {
+    display: none;
+}

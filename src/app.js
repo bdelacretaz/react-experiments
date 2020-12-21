@@ -1,6 +1,7 @@
 import React from 'react';
 import PhotoBox from './photobox';
 import content from './content.js';
+import Prefetch from './prefetch.js';
 import Typography from '@material-ui/core/Typography';
 
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
                 </div>
                 <PhotoBox siteContent={content.site} data={content.personnes}/>
             </Typography>
+            <Prefetch data={content.personnes}/>
         </div>
     }
 }
