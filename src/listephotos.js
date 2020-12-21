@@ -11,7 +11,7 @@ class ListePhotos extends React.Component {
             <Grid className={"grid"} container spacing={0}>
             {
                 this.props.content.map(it => 
-                    <Grid item xs={12} sm={12} md={6} lg={6} xl={4}>
+                    <Grid item xs={12} sm={12} md={12} lg={6} xl={4}>
                         <Vignette 
                             selectCallback={this.props.selectCallback} 
                             index={it.index}
