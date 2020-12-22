@@ -12,12 +12,12 @@ class DetailPhoto extends React.Component {
                     <Paper className={"paper"}>
                         <img src={item.photoURL} alt={item.fullName}/>
                         <h1>{item.prenom} {item.nom}</h1>
-                        <p classe="habite">{item.prenom } habite a {item.habite} depuis {item.depuis}.</p>
                         <p class="phrase">{item.phrase}</p>
+                        <p classe="habite">{item.prenom } habite a {item.habite} depuis {item.depuis}.</p>
                         <Interview personne={item}/>
+                        <div class="spacer"/>
                     </Paper>
                 </Typography>
-                <div class="spacer"/>
             </div>
         } else {
             return <div className="emptydetailphoto"><h1>-</h1></div>

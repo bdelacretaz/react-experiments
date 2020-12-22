@@ -1,3 +1,8 @@
+body {
+    background-image: url('images/stars.jpg');
+    background-size: cover;
+}
+
 .app .title {
     font-weight: bold;
 }
@@ -51,10 +56,18 @@
     overflow: scroll;
 }
 
+.detailphoto .paper {
+    padding: 1em;
+    height: 100%;
+}
+
 .detailphoto img {
+    border: solid rgb(218, 218, 218) 1px;
+    padding: 0.1em;
     float:right;
     width: 50%;
     height: auto;
+    margin-top: 2em;
 }
 
 .detailphoto .phrase, 
@@ -63,7 +76,8 @@
 }
 
 .detailphoto .spacer {
-    height:10em;
+    height:4em;
+    clear: both;
 }
 
 .minidetail {
