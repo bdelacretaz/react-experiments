@@ -9,7 +9,7 @@ class DetailPhoto extends React.Component {
         if(item) {
             return <div className="detailphoto">
                 <Typography>
-                    <Paper className={"paper"}>
+                    <Paper className={"paper detailfont"}>
                         <img src={item.photoURL} alt={item.fullName}/>
                         <h1>{item.prenom} {item.nom}</h1>
                         <p class="phrase">{item.phrase}</p>

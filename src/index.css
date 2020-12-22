@@ -51,6 +51,10 @@ body {
     margin-top: 0.1em;
 }
 
+.detailfont {
+    font-family: 'Andika New Basic', Georgia, Verdana;
+}
+
 .detailphoto {
     height:90vh;
     overflow: scroll;
@@ -59,6 +63,8 @@ body {
 .detailphoto .paper {
     padding: 1em;
     height: 100%;
+    background-image: url('images/clouds.jpg');
+    background-size: cover;
 }
 
 .detailphoto img {
