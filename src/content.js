@@ -64,6 +64,31 @@ const content = {
                 ]
             }
         },
+        {
+            prenom: "Ladam",
+            nom: "Maskee",
+            habite: "par ici",
+            depuis: "2014",
+            phrase: "Ladam porte parfois un masque, comme nous tous.",
+            photoURL: "./images/personnes/anitapeppers-morguefile.jpg",
+            squarePhotoURL: "./images/personnes/thelesleyshow-morguefile-square.jpg",
+            interview: {
+                qr: [
+                    {
+                        q: "On peut se tutoyer?",
+                        r: "Bien sûr!",
+                    },
+                    {
+                        q: "Un plat préféré?",
+                        r: "Les fricandeaux de palée du pêcheur!",
+                    },
+                    {
+                        q: "Un livre préféré?",
+                        r: "'Masque ou pas masque', de Maurice-Covid Ricemeau.",
+                    },
+                ]
+            }
+        },
     ]
 }
 
@@ -154,8 +179,12 @@ function cleanupKey(key) {
 // compute person keys, full names and URLs for pictures etc
 content.personnes.map(p => {
     p.key = cleanupKey(`${p.prenom}-${p.nom}`.toLowerCase());
-    p.photoURL = `./images/personnes/${p.key}.jpg`;
-    p.squarePhotoURL = `./images/personnes/${p.key}-square.jpg`;
+    if(!p.photoURL) {
+        p.photoURL = `./images/personnes/${p.key}.jpg`;
+    }
+    if(!p.squarePhotoURL) {
+        p.squarePhotoURL = `./images/personnes/${p.key}-square.jpg`;
+    }
     p.fullName = `${p.prenom} ${p.nom}`
     return null;
 })
