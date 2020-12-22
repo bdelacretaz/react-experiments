@@ -20,7 +20,8 @@ class Interview extends React.Component {
 
         return <div class="interview">
             <div>
-                {personne.interview.journaliste.prenom} {personne.interview.journaliste.nom} a interviewé {personne.prenom}&nbsp;
+                Notre journaliste,&nbsp;
+                {personne.interview.journaliste.prenom} {personne.interview.journaliste.nom}, a posé quelques questions à {personne.prenom}&nbsp;
                 {personne.interview.lieu}, {personne.interview.quand}.
             </div>
             {interview}

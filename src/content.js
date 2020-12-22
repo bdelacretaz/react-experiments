@@ -25,12 +25,23 @@ const content = {
                 nom: "Koustic",
                 initiales: "JK"
             },
+            {
+                prenom: "Hakim",
+                nom: "Feryr",
+                initiales: "HF"
+            },
+            {
+                prenom: "Sylvestre",
+                nom: "Denoël",
+                initiales: "SD"
+            },
         ],
         lieux: [
-            "au bord de la plage",
+            "sur la plage communale",
             "au détour d'une balade en forêt",
             "sur la terrasse d'un de nos sympathiques restaurants",
-            "lors d'une balade à la rame"
+            "lors d'une balade à la rame",
+            "durant un trajet en train"
         ],
         quand: [
             "cet été",
@@ -38,6 +49,7 @@ const content = {
             "il y a peu",
             "la semaine passée",
             "avant le dépôt des listes",
+            "lors d'une belle soirée d'été"
         ]
     },
     personnes: [
