@@ -8,14 +8,15 @@ class PhotoBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected : -1
+      selected : 0
     }
     this.handleSelect = this.handleSelect.bind(this);
   }
 
   handleSelect(index) {
     if(this.state.selected === index) {
-      this.setState({selected: -1});
+      // re-selecting what's already selected?
+      // this.setState({selected: -1});
     } else {
       this.setState({selected: index});
     }
